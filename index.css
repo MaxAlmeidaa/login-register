@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #cff59b 0%, #9599E2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 2px green;
+    border-radius: 6px;
+    padding: 5px;
+    backdrop-filter: blur(5px);
+}
+
+
+p{
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    font-size: x-large;
+
+}
+hr{
+    border: solid 2px green;
+    
+}
+
+button{
+    width: 20%;
+    margin-left: 1%;
+    border-radius: 6px;
+    caret-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+input{
+    border: solid green 2px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 1%;
+    font-size: 15px;
+    width: 80%;
+}
+
+#exit{
+    position: relative;
+    cursor: pointer;
+}
+
+#exit:hover{
+    transform: scale(1.8);}
+#vis-modal {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    border-radius: 6px;
+    background: -webkit-linear-gradient(left, #ffffff, #cff59b);
+    animation: fadeInAnimation2 ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}   
+#sectionRegister{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    caret-color: transparent;
+}
+
+#conteudo-modal{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+    gap: 1rem;
+    color: black;    
+}
+

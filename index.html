@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tela Login</title>
+</head>
+<body>
+    <div id="container">
+        <p>Login</p>
+        <hr>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Insira seu email" pattern=".+@globex\.com" size="30" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Insira sua senha" minlength="6" required>
+        <button id="btn-login">Entrar</button>
+        <div id="rodape">
+            <h3>Não é registrado? Faça o seu cadastro </h3>
+            <button id="btn-register" >AQUI</button>
+        </div>
+    </div>
+    <div id="vis-modal" class="modal">
+        <div id="conteudo-modal">
+            <div id="sectionRegister">
+                <p>Registro</p>
+                <span id="exit">X</span>
+
+            </div>
+            <hr>
+            <label for="name">Nome</label>
+            <input type="name" id="nameModal" placeholder="Insira seu nome">
+
+            <label for="email">Email</label>
+            <input type="email" id="emailModal" placeholder="Insira seu email" pattern=".+@globex\.com" size="30" required>
+            
+
+            <label for="password">Password</label>
+            <input type="password" id="passwordModal" placeholder="Insira sua senha" minlength="6" required>
+
+            <label for="password">Confirm Password</label>
+            <input type="password" id="passwordModalConfirm" placeholder="Insira sua senha novamente" minlength="6" required>
+            <span>A senha deve ter entre 6 a 25 digitos, contendo letras maíusculas e minúsculas, sendo entre 0 e 9 </span>
+            <hr>
+            <button id="btnRegister">Criar conta</button>
+            </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
