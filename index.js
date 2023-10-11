@@ -85,7 +85,7 @@ btnLogin.addEventListener("click", () => {
     if (userLogged) {
       alert(`Seja Bem vindo ${userLogged.name}`);
       sessionStorage.setItem("token", uuidv4());
-      location.href = "http://127.0.0.1:5500/dashboard.html";
+      location.href = "dashboard.html";
     }
   } else {
     alert("Por favor insira um e-mail valido");
