@@ -61,7 +61,7 @@ btnRegister.addEventListener("click", () => {
     } else {
       passwordModal.value = "";
       passwordConfirmModal.value = "";
-      alert("Senhas não conferem!");
+      alert("Senhas inválidas!");
     }
 
     console.table(listUsers);
