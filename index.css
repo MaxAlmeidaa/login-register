@@ -39,6 +39,7 @@ hr{
 }
 
 button{
+    margin-bottom: 2%;
     width: 20%;
     margin-left: 5%;
     border-radius: 6px;
@@ -74,7 +75,6 @@ input{
     display: none;
     flex-direction: column;
     width: 50%;
-    height: 95%;
     border-radius: 6px;
     background: -webkit-linear-gradient(left, #ffffff, #cff59b);
     animation: fadeInAnimation2 ease 1s;
