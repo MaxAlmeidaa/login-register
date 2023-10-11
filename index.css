@@ -40,12 +40,13 @@ hr{
 
 button{
     margin-bottom: 2%;
-    width: 20%;
+    width: 40%;
     margin-left: 5%;
     border-radius: 6px;
     caret-color: transparent;
     cursor: pointer;
     transition: 0.5s;
+    font-size:smaller
 }
 
 button:hover{
