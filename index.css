@@ -56,7 +56,7 @@ button:hover{
 }
 
 input{
-    border: solid green 2px;
+    border: solid black;
     border-radius: 6px;
     outline: none;
     padding-left: 1%;
@@ -109,3 +109,38 @@ input{
     color: black;    
 }
 
+#invalidLogin{
+    font-size: small;
+    margin-top: -10px;
+    margin-left: 2px;
+    color: red;
+    display: none;
+}
+#invalidName{
+    font-size: small;
+    margin-top: -10px;
+    margin-left: 2px;
+    color: red;
+    display: none;
+}
+#invalidEmail{
+    font-size: small;
+    margin-top: -10px;
+    margin-left: 2px;
+    color: red;
+    display: none;
+}
+#invalidPasswordModal{
+    font-size: small;
+    margin-top: -10px;
+    margin-left: 2px;
+    color: red;
+    display: none;
+}
+#invalidPasswordModalConfirm{
+    font-size: small;
+    margin-top: -10px;
+    margin-left: 2px;
+    color: red;
+    display: none;
+}

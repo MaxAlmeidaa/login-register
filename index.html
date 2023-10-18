@@ -15,6 +15,7 @@
 
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Insira sua senha" minlength="6" required>
+        <span id="invalidLogin">Login invalid</span>
         <button id="btn-login">Entrar</button>
         <div id="rodape">
             <h3>Não é registrado? Faça o seu cadastro </h3>
@@ -30,17 +31,20 @@
             </div>
             <hr>
             <label for="name">Nome</label>
-            <input type="name" id="nameModal" placeholder="Insira seu nome">
+            <input type="name" id="nameModal" placeholder="Insira seu nome" required>
+            <span id="invalidName">invalid</span>
 
             <label for="email">Email</label>
             <input type="email" id="emailModal" placeholder="Insira seu email" pattern=".+@globex\.com" size="30" required>
-            
+            <span id="invalidEmail">invalid</span>
 
             <label for="password">Password</label>
             <input type="password" id="passwordModal" placeholder="Insira sua senha" minlength="6" required>
+            <span id="invalidPasswordModal">invalid</span>
 
             <label for="password">Confirm Password</label>
             <input type="password" id="passwordModalConfirm" placeholder="Insira sua senha novamente" minlength="6" required>
+            <span id="invalidPasswordModalConfirm">invalid</span>
             <hr>
             <span>A senha deve ter entre 6 a 25 digitos, sendo entre 0 e 9, contendo letras maiúsculas e minúsculas e caracteres especiais.</span>
             <hr>

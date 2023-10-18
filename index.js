@@ -8,6 +8,10 @@ const btnLogin = document.getElementById("btn-login");
 const nameModal = document.getElementById("nameModal");
 const pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const patternPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[ -/:-@\[-`{-~]).{6,25}$/;
+const invalidLogin = document.getElementById("invalidLogin")
+const invalidEmail = document.getElementById("invalidEmail")
+const invalidPasswordModal = document.getElementById("invalidPasswordModal")
+const invalidPasswordModalConfirm = document.getElementById("invalidPasswordModalConfirm")
 
 class Modal {
   constructor() {
@@ -56,16 +60,21 @@ btnRegister.addEventListener("click", () => {
       emailModal.value = "";
       passwordModal.value = "";
       passwordConfirmModal.value = "";
+      invalidEmail.style.display = "none"
+      invalidPasswordModal.style.display = "none"
+      invalidPasswordModalConfirm.style.display = "none"
       alert("Conta criada com sucesso!");
       modal.exitModal();
     } else {
       passwordModal.value = "";
       passwordConfirmModal.value = "";
+      invalidPasswordModal.style.display = "block"
+      invalidPasswordModalConfirm.style.display = "block"
       alert("Senhas inválidas!");
     }
 
-    console.table(listUsers);
   } else {
+    invalidEmail.style.display = "block"
     alert("Por favor insira um e-mail válido");
   }
 });
@@ -86,8 +95,10 @@ btnLogin.addEventListener("click", () => {
       alert(`Seja Bem vindo ${userLogged.name}`);
       sessionStorage.setItem("token", uuidv4());
       location.href = "dashboard.html";
+      invalidLogin.style.display = "none"
     }
   } else {
+    invalidLogin.style.display = "block"
     alert("Por favor insira um e-mail valido");
   }
 });
