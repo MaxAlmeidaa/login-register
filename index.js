@@ -75,7 +75,7 @@ btnRegister.addEventListener("click", () => {
 
   } else {
     invalidEmail.style.display = "block"
-    alert("Por favor insira um e-mail válido");
+    alert("Por favor insira um e-mail válido!");
   }
 });
 
@@ -99,7 +99,7 @@ btnLogin.addEventListener("click", () => {
     }
   } else {
     invalidLogin.style.display = "block"
-    alert("Por favor insira um e-mail valido");
+    alert("Por favor insira um e-mail valido!");
   }
 });
 
